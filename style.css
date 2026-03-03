@@ -23,46 +23,25 @@ body {
     transition: background 0.35s ease, color 0.35s ease;
 }
 
-/*
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-*/
-/*
-.tagline {
-    font-size: 18px;
-    opacity: 0.9;
-    margin-bottom: 20px;
-}*/
-/*
-.cta-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #fff;
-    color: #667eea;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-}*/
-/*
-.cta-button:hover {
-    background-color: #e0e0ff;
-}*/
 
 /* HERO HEADER - Modern & Professional */
-
 header {
-  min-height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: url("https://raw.githubusercontent.com/Ayoosh-Tech/portfolio/main/header-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    /*animation: gradientBG 15s ease infinite;*/
+    border-radius: 0 0 20px 20px;
+    background: url("header-bg.jpg");
+  background-size: cover;        /* fills screen */
+  background-position: center;   /* centers image */
+  background-repeat: no-repeat;  /* no repeating */
+ /* background-attachment: fixed;   stays still when scrolling */
 }
 
 
@@ -982,9 +961,7 @@ body.dark .dark-toggle {
   opacity: 1;
   transform: scale(1);
 }
-skills.forEach((skill, index) => {
-  skill.style.transitionDelay = `${index * 0.1}s`;
-});
+
 
 @media (max-width: 768px) {
   .projects-container {
