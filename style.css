@@ -73,7 +73,7 @@ header {
     overflow: hidden;
     /*animation: gradientBG 15s ease infinite;*/
     border-radius: 0 0 20px 20px;
-    background-image: url("../img/header-bg.jpg");
+    background-image: url("header-bg.jpg");
   background-size: cover;        /* fills screen */
   background-position: center;   /* centers image */
   background-repeat: no-repeat;  /* no repeating */
@@ -640,7 +640,7 @@ footer {
 
 footer {
     position: relative;
-    background: url("../img/header-bg.jpg") center/cover no-repeat;
+    background: url("header-bg.jpg") center/cover no-repeat;
     padding: 40px 20px;
     margin-top: 80px;
     color: white;
