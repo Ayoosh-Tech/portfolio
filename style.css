@@ -37,7 +37,7 @@ header {
     overflow: hidden;
     /*animation: gradientBG 15s ease infinite;*/
     border-radius: 0 0 20px 20px;
-    background: url("./header-bg.jpg?v=2") !important;
+    background: url("headerbg.jpg");
   background-size: cover;        /* fills screen */
   background-position: center;   /* centers image */
   background-repeat: no-repeat;  /* no repeating */
@@ -582,29 +582,56 @@ footer {
 }*/
 
 
-/*footer {
-    background: #111827;
+/* Glow Hover Effect 
+.footer-icons a:hover {
+    background-color: #667eea;
     color: white;
-    padding: 30px 20px;
-    margin-top: 80px;
+    box-shadow: 0 0 15px #667eea;
+    transform: translateY(-4px);
+}
+.footer-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
 }
 
-.footer-content {
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-content p {
+.footer-track {
+    display: inline-block;
+    animation: scrollText 15s linear infinite;
     font-size: 14px;
+    letter-spacing: 1px;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-icons a {
+    font-size: 20px;
+    color: white;
 }*/
 
 footer {
     position: relative;
-    background: url("./header-bg.jpg?v=2") center/cover no-repeat !important;
+    background: url("headerbg.jpg") center/cover no-repeat;
     padding: 40px 20px;
     margin-top: 80px;
     color: white;
@@ -664,58 +691,12 @@ footer::before {
     transition: all 0.3s ease;
 }*/
 
-/* Glow Hover Effect 
-.footer-icons a:hover {
-    background-color: #667eea;
-    color: white;
-    box-shadow: 0 0 15px #667eea;
-    transform: translateY(-4px);
-}
-.footer-marquee {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-}
-
-.footer-track {
-    display: inline-block;
-    animation: scrollText 15s linear infinite;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
-@keyframes scrollText {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.footer-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.footer-icons a {
-    font-size: 20px;
-    color: white;
-}*/
 
 .footer {
     position: relative;
     margin-top: 80px;
     padding: 80px 20px 40px;
-    background: url("your-header-image.jpg") center/cover no-repeat !important;
+    background: url("headerbg.jpg") center/cover no-repeat;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     overflow: hidden;
@@ -1008,6 +989,3 @@ body.dark .dark-toggle {
     padding: 25px 10px;
   }
 }
-/* End of CSS file */
- 
-/* dummy line to trigger GitHub Pages rebuild */
